@@ -1,3 +1,5 @@
+import { SEASON_YEAR, getCurrentDateParts } from '/calendar-utils.js';
+
 const calendarMonths = [
   {
     month: 'May',
@@ -140,6 +142,35 @@ const tagLabel = {
   peak: 'Peak',
 };
 
+function getCurrentSeasonPhase() {
+  const { year, monthIndex } = getCurrentDateParts();
+
+  console.log(`Current date: ${year}-${monthIndex + 1}`);
+  
+  if (year < SEASON_YEAR || (year === SEASON_YEAR && monthIndex <= 5)) {
+    return 'base';
+  }
+
+  if (year === SEASON_YEAR && monthIndex === 6) {
+    return 'build';
+  }
+
+  if (year === SEASON_YEAR && monthIndex === 7) {
+    return 'sharpen';
+  }
+
+  return 'peak';
+}
+
+function updateSeasonArc() {
+  const activePhase = getCurrentSeasonPhase();
+  const seasonItems = document.querySelectorAll('[data-season-phase]');
+
+  seasonItems.forEach((item) => {
+    item.classList.toggle('is-active', item.dataset.seasonPhase === activePhase);
+  });
+}
+
 const calendarRoot = document.querySelector('#calendar-grid');
 
 if (calendarRoot) {
@@ -180,3 +211,5 @@ if (calendarRoot) {
 
   calendarRoot.appendChild(grid);
 }
+
+updateSeasonArc();
