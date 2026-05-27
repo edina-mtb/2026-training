@@ -915,6 +915,17 @@ body {
   color: var(--text-main);
 }
 
+.calendar-day__focus-link {
+  color: inherit;
+  text-decoration-color: rgba(31, 106, 70, 0.45);
+  text-underline-offset: 0.14em;
+}
+
+.calendar-day__focus-link:hover {
+  color: #1f6a46;
+  text-decoration-color: currentColor;
+}
+
 .calendar-day__tag {
   display: inline-flex;
   margin-top: 0.7rem;

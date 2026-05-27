@@ -1,5 +1,8 @@
 import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from './calendar-utils.js';
 
+const STRENGTH_GUIDE_URL = 'https://www.edinacyclingteam.com/strength-training-guide-mtb-focus.html';
+const SKILLS_GUIDE_URL = 'https://www.edinacyclingteam.com/riding-skills--technique.html';
+
 const julyTrainingDays = [
   {
     day: 1,
@@ -223,6 +226,24 @@ const toneLabel = {
   endurance: 'Endurance',
 };
 
+function renderFocus(entry) {
+  if (entry.tone === 'strength') {
+    return entry.focus.replace(
+      /strength/i,
+      `<a class="calendar-day__focus-link" href="${STRENGTH_GUIDE_URL}" target="_blank" rel="noreferrer">Strength</a>`
+    );
+  }
+
+  if (entry.tone === 'skills') {
+    return entry.focus.replace(
+      /skills?/i,
+      `<a class="calendar-day__focus-link" href="${SKILLS_GUIDE_URL}" target="_blank" rel="noreferrer">Skills</a>`
+    );
+  }
+
+  return entry.focus;
+}
+
 function buildLeadingEmptyDays(year, monthIndex) {
   const firstDay = new Date(year, monthIndex, 1).getDay();
   const normalized = (firstDay + 6) % 7;
@@ -280,7 +301,7 @@ function renderJulyCalendar() {
         <span class="calendar-day__date">${entry.day}</span>
         <span class="calendar-day__tone calendar-day__tone--${entry.tone}">${toneLabel[entry.tone]}</span>
       </div>
-      <h3>${entry.focus}</h3>
+      <h3>${renderFocus(entry)}</h3>
       <p>${entry.detail}</p>
       ${
         entry.tag

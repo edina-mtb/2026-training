@@ -1,5 +1,8 @@
 import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from './calendar-utils.js';
 
+const STRENGTH_GUIDE_URL = 'https://www.edinacyclingteam.com/strength-training-guide-mtb-focus.html';
+const SKILLS_GUIDE_URL = 'https://www.edinacyclingteam.com/riding-skills--technique.html';
+
 const octoberTrainingDays = [
   { day: 1, focus: 'Team practice support', detail: 'One purposeful session is enough as the taper begins.', tone: 'hard', tag: 'Support day' },
   { day: 2, focus: 'Recovery day', detail: 'Keep the load low and remove anything non-essential.', tone: 'recovery' },
@@ -18,6 +21,24 @@ const octoberTrainingDays = [
 const weekdayLabels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 const currentDate = getCurrentDateParts();
 const toneLabel = { recovery: 'Recovery', strength: 'Strength', hard: 'Hard', skills: 'Skills', endurance: 'Endurance', race: 'Race' };
+
+function renderFocus(entry) {
+  if (entry.tone === 'strength') {
+    return entry.focus.replace(
+      /strength/i,
+      `<a class="calendar-day__focus-link" href="${STRENGTH_GUIDE_URL}" target="_blank" rel="noreferrer">Strength</a>`
+    );
+  }
+
+  if (entry.tone === 'skills') {
+    return entry.focus.replace(
+      /skills?/i,
+      `<a class="calendar-day__focus-link" href="${SKILLS_GUIDE_URL}" target="_blank" rel="noreferrer">Skills</a>`
+    );
+  }
+
+  return entry.focus;
+}
 
 function buildLeadingEmptyDays(year, monthIndex) {
   const firstDay = new Date(year, monthIndex, 1).getDay();
@@ -62,7 +83,7 @@ function renderOctoberCalendar() {
         <span class="calendar-day__date">${entry.day}</span>
         <span class="calendar-day__tone calendar-day__tone--${entry.tone}">${toneLabel[entry.tone]}</span>
       </div>
-      <h3>${entry.focus}</h3>
+      <h3>${renderFocus(entry)}</h3>
       <p>${entry.detail}</p>
       ${entry.tag ? `<span class="calendar-day__tag calendar-day__tag--${entry.tone}">${entry.tag}</span>` : ''}
       ${entry.race ? `<div class="calendar-day__alternate calendar-day__alternate--race"><span>${entry.tone === 'race' ? 'Race focus' : 'Optional race'}</span><p>${entry.race}</p></div>` : ''}
