@@ -1,3 +1,3 @@
-import { updateTodayLinks } from '/calendar-utils.js';
+import { updateTodayLinks } from './calendar-utils.js';
 
 updateTodayLinks();

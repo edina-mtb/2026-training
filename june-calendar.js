@@ -1,4 +1,4 @@
-import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from '/calendar-utils.js';
+import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from './calendar-utils.js';
 
 const juneTrainingDays = [
   {

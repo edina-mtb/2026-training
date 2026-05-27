@@ -1,4 +1,4 @@
-import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from '/calendar-utils.js';
+import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from './calendar-utils.js';
 
 const septemberTrainingDays = [
   { day: 1, focus: 'Recovery + reset', detail: 'Absorb late August racing and keep the opening of the month light.', tone: 'recovery' },

@@ -1,4 +1,4 @@
-import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from '/calendar-utils.js';
+import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from './calendar-utils.js';
 
 const octoberTrainingDays = [
   { day: 1, focus: 'Team practice support', detail: 'One purposeful session is enough as the taper begins.', tone: 'hard', tag: 'Support day' },

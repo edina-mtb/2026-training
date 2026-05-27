@@ -1,4 +1,4 @@
-import { SEASON_YEAR, getCurrentDateParts } from '/calendar-utils.js';
+import { SEASON_YEAR, getCurrentDateParts } from './calendar-utils.js';
 
 const calendarMonths = [
   {
