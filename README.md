@@ -1,46 +1,63 @@
-# Astro Starter Kit: Basics
+# Edina MTB 2026 Training Hub
+
+Static training site for the Edina mountain bike team.
+
+## Project Shape
+
+The app is a plain static site:
+
+- `index.html` for the season overview
+- `may-calendar.html` through `october-calendar.html` for month pages
+- `styles.css` for shared styling
+- `app.js`, `today-nav.js`, and the month `*.js` files for page behavior
+- `calendar-utils.js` for shared date logic
+- `server.mjs` for local preview
+
+## Local Development
+
+Install dependencies:
 
 ```sh
-npm create astro@latest -- --template basics
+npm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Start the local server:
 
-## 🚀 Project Structure
+```sh
+npm run dev
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+The site runs at `http://127.0.0.1:4321/`.
+
+## Build
+
+This project does not have a compile step. The build command is only a validation placeholder:
+
+```sh
+npm run build
+```
+
+## Date Testing
+
+Date-aware UI can be tested with a query parameter:
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+?testDate=2026-08-12
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Examples:
 
-## 🧞 Commands
+- `index.html?testDate=2026-05-27`
+- `index.html?testDate=2026-07-10`
+- `index.html?testDate=2026-08-12`
+- `index.html?testDate=2026-09-20`
 
-All commands are run from the root of the project, from a terminal:
+This affects:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- the active season arc on the overview page
+- the `Today` nav link target
+- current day and current week highlighting on calendar pages
 
-## 👀 Want to learn more?
+## Deployment
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Because the site uses relative paths, it is suitable for static hosting setups such as GitHub Pages project hosting.
