@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="September 2026 training calendar for the Edina mountain bike team, centered on race season maintenance and required race weekends."
+    />
+    <title>September Training Calendar | Edina Mountain Bike Team</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/index.html#top" class="brand">
+          <span class="brand__eyebrow">2026 Season Plan</span>
+          <span class="brand__name">Edina Mountain Bike Team</span>
+        </a>
+
+        <nav class="top-nav" aria-label="Primary">
+          <a href="/may-calendar.html#current-day" data-today-link>Today</a>
+          <a href="/index.html#overview">Overview</a>
+          <a href="/may-calendar.html">May</a>
+          <a href="/june-calendar.html">June</a>
+          <a href="/july-calendar.html">July</a>
+          <a href="/august-calendar.html">August</a>
+          <a href="/september-calendar.html" class="is-current">September</a>
+          <a href="/october-calendar.html">October</a>
+        </nav>
+
+        <a class="header-cta" href="https://www.strava.com" target="_blank" rel="noreferrer">Join Strava</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section june-hero">
+        <div class="june-hero__content">
+          <span class="section-label">September 2026</span>
+          <h1>Race, recover, maintain.</h1>
+          <p>
+            September is about staying sharp enough to perform while letting the required race weekends dictate the
+            shape of each week.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#september-calendar-grid">Jump to the Calendar</a>
+            <a class="button button--secondary" href="/index.html#overview">Back to Overview</a>
+          </div>
+        </div>
+
+        <aside class="june-hero__panel">
+          <p class="hero__panel-label">A Few Rules</p>
+          <ul class="rules-list">
+            <li>Required race weekends are the center of the month.</li>
+            <li>Optional racing should be rare and conservative.</li>
+            <li>Openers happen Saturday. Race day is Sunday.</li>
+            <li>Maintain fitness, but do not chase new fitness here.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="section-label">At a Glance</span>
+          <h2>Shape of the month.</h2>
+          <p>
+            The goal is to maintain form, protect recovery, and perform well on the required race weekends in Rockford
+            and Theodore Wirth.
+          </p>
+        </div>
+
+        <div class="june-summary-grid">
+          <article class="summary-card">
+            <span class="summary-card__label">Phase</span>
+            <strong>Race Season</strong>
+            <p>Required race weekends drive the structure of the month.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Weekday Pattern</span>
+            <strong>Support Work</strong>
+            <p>Practices and short quality keep the legs awake without adding noise.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Race Weekends</span>
+            <strong>Two Required</strong>
+            <p>Race 3 in Rockford and Race 5 at Theodore Wirth.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Weekend Default</span>
+            <strong>Endurance</strong>
+            <p>Non-race weekends default back to aerobic work.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="september-calendar-grid" class="section">
+        <div class="section-heading">
+          <span class="section-label">Day by Day</span>
+          <h2>Training Calendar</h2>
+          <p>Required weekends anchor the month, with Saturday openers and Sunday race execution.</p>
+        </div>
+
+        <div class="calendar-legend calendar-legend--expanded">
+          <span><i class="legend-dot legend-dot--required"></i> Planned workout day</span>
+          <span><i class="legend-dot legend-dot--optional"></i> Standard training focus</span>
+          <span><i class="legend-dot legend-dot--endurance"></i> Endurance emphasis</span>
+          <span><i class="legend-dot legend-dot--peak"></i> Optional or required race shown</span>
+        </div>
+
+        <div class="month-grid-shell" id="september-month-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/today-nav.js"></script>
+    <script type="module" src="/september-calendar.js"></script>
+  </body>
+</html>

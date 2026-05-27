@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="August 2026 training calendar for the Edina mountain bike team, focused on sharpening and protecting freshness for the first A-races."
+    />
+    <title>August Training Calendar | Edina Mountain Bike Team</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/index.html#top" class="brand">
+          <span class="brand__eyebrow">2026 Season Plan</span>
+          <span class="brand__name">Edina Mountain Bike Team</span>
+        </a>
+
+        <nav class="top-nav" aria-label="Primary">
+          <a href="/index.html#overview">Overview</a>
+          <a href="/may-calendar.html#current-day" data-today-link>Today</a>
+          <a href="/may-calendar.html">May</a>
+          <a href="/june-calendar.html">June</a>
+          <a href="/july-calendar.html">July</a>
+          <a href="/august-calendar.html" class="is-current">August</a>
+          <a href="/september-calendar.html">September</a>
+          <a href="/october-calendar.html">October</a>
+        </nav>
+
+        <a class="header-cta" href="https://www.strava.com" target="_blank" rel="noreferrer">Join Strava</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section june-hero">
+        <div class="june-hero__content">
+          <span class="section-label">August 2026</span>
+          <h1>Sharpen.</h1>
+          <p>
+            August is where the season gets specific. Optional events only matter if they support the first A-races,
+            and freshness starts to matter more than collecting one more hard day.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#august-calendar-grid">Jump to the Calendar</a>
+            <a class="button button--secondary" href="/index.html#calendar">Back to Season Hub</a>
+          </div>
+        </div>
+
+        <aside class="june-hero__panel">
+          <p class="hero__panel-label">A Few Rules</p>
+          <ul class="rules-list">
+            <li>Optional events should support Austin and Shakopee, not compete with them.</li>
+            <li>Midweek short-course races replace hard work. They do not add to it.</li>
+            <li>Required A-races always win over optional events.</li>
+            <li>Sharp and fresh beats tired and over-prepared.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="section-label">At a Glance</span>
+          <h2>Shape of the month.</h2>
+          <p>
+            August moves from selective sharpening into the opening A-race block. The work should feel more specific,
+            but the total fatigue should stay lower and more purposeful.
+          </p>
+        </div>
+
+        <div class="june-summary-grid">
+          <article class="summary-card">
+            <span class="summary-card__label">Phase</span>
+            <strong>Sharpen</strong>
+            <p>Shift from general summer fitness toward race-specific readiness.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Overlay</span>
+            <strong>Race Season</strong>
+            <p>The first required weekends now begin to organize the month.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Weekday Pattern</span>
+            <strong>Selective Quality</strong>
+            <p>Practice stays primary and optional midweek races only fit when they replace quality.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Weekend Default</span>
+            <strong>Race or Endurance</strong>
+            <p>Optional XC early, then Austin and Shakopee anchor the back half of the month.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="august-calendar-grid" class="section">
+        <div class="section-heading">
+          <span class="section-label">Day by Day</span>
+          <h2>Training Calendar</h2>
+          <p>
+            Early August still allows selective tune-up events. Once the A-races arrive, the week should bend around them.
+          </p>
+        </div>
+
+        <div class="calendar-legend calendar-legend--expanded">
+          <span><i class="legend-dot legend-dot--required"></i> Planned workout day</span>
+          <span><i class="legend-dot legend-dot--optional"></i> Standard training focus</span>
+          <span><i class="legend-dot legend-dot--endurance"></i> Endurance emphasis</span>
+          <span><i class="legend-dot legend-dot--peak"></i> Optional or required race shown</span>
+        </div>
+
+        <div class="month-grid-shell" id="august-month-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section">
+        <div class="split-layout split-layout--equal">
+          <article class="content-panel">
+            <h3>Levels</h3>
+            <ul class="calendar-support-list">
+              <li><strong>Beginner:</strong> prioritize practices and required races, and keep optional race use limited.</li>
+              <li><strong>Intermediate:</strong> use one selective optional event only when it clearly supports readiness.</li>
+              <li><strong>Advanced:</strong> may use more optional events, but only if recovery and A-race quality stay protected.</li>
+            </ul>
+          </article>
+
+          <article class="content-panel content-panel--accent">
+            <h3>If Plans Change</h3>
+            <ul class="calendar-support-list">
+              <li><strong>Missed optional XC race:</strong> replace it with intervals only if the week still needs race-simulation work.</li>
+              <li><strong>Missed endurance-oriented weekend:</strong> replace it with a steady endurance ride.</li>
+              <li><strong>No weekend event:</strong> default to endurance.</li>
+              <li><strong>A-race week:</strong> skip substitutions that add unnecessary fatigue.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/today-nav.js"></script>
+    <script type="module" src="/august-calendar.js"></script>
+  </body>
+</html>

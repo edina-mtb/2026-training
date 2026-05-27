@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="May 2026 training calendar for the Edina mountain bike team, using the base-season weekly rhythm and optional race substitutions."
+    />
+    <title>May Training Calendar | Edina Mountain Bike Team</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/index.html#top" class="brand">
+          <span class="brand__eyebrow">2026 Season Plan</span>
+          <span class="brand__name">Edina Mountain Bike Team</span>
+        </a>
+
+        <nav class="top-nav" aria-label="Primary">
+          <a href="/index.html#overview">Overview</a>
+          <a href="/may-calendar.html#current-day" data-today-link>Today</a>
+          <a href="/may-calendar.html" class="is-current">May</a>
+          <a href="/june-calendar.html">June</a>
+          <a href="/july-calendar.html">July</a>
+          <a href="/august-calendar.html">August</a>
+          <a href="/september-calendar.html">September</a>
+          <a href="/october-calendar.html">October</a>
+        </nav>
+
+        <a class="header-cta" href="https://www.strava.com" target="_blank" rel="noreferrer">Join Strava</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section june-hero">
+        <div class="june-hero__content">
+          <span class="section-label">May 2026</span>
+          <h1>Base miles and a week you can repeat.</h1>
+          <p>
+            Emphasis on hours in saddle with focus on endurance. Train yourself to fuel and recover. Optionally mix in some early season races.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#may-calendar-grid">Jump to the Calendar</a>
+            <a class="button button--secondary" href="/index.html#calendar">Back to Season Hub</a>
+          </div>
+        </div>
+
+        <aside class="june-hero__panel">
+          <p class="hero__panel-label">Guidelines</p>
+          <ul class="rules-list">
+            <li>Endurance "Talk Test": If you can't speak in full sentences, you are going too fast!
+            <li>Check Your Bike: tire pressure, lube chain. Brakes function.</li>
+            <li>Fuel 60-120mins: Aim for 30-60g carbs per hour </li>
+            <li>Fuel >120mins: Aim for 60-90g carbs/hour </li>
+            <li>Finish May feeling ready for more, not cooked.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="section-label">At a Glance</span>
+          <h2>Shape of the month.</h2>
+          <p>
+            May is still pure pre-season base work, but now with a clear weekly structure: two quality days,
+            one big aerobic ride, one true rest day, and optional race substitutions on select weekends.
+          </p>
+        </div>
+
+        <div class="june-summary-grid">
+          <article class="summary-card">
+            <span class="summary-card__label">Phase</span>
+            <strong>Base</strong>
+            <p>Build durability, rhythm, and early season consistency.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Overlay</span>
+            <strong>Early Build</strong>
+            <p>Add just enough structured intensity to move fitness forward.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Weekly Pattern</span>
+            <strong>2 Hard Days</strong>
+            <p>Tuesday and Thursday lead, with skills Wednesday and Friday.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Weekend Default</span>
+            <strong>Endurance + Rest</strong>
+            <p>Saturday is the big ride. Sunday is total rest unless racing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="may-calendar-grid" class="section">
+        <div class="section-heading">
+          <span class="section-label">Day by Day</span>
+          <h2>Training Calendar</h2>
+          <p>
+            The standard week comes first. Optional races appear below as selective substitutions.
+          </p>
+        </div>
+
+        <div class="calendar-legend calendar-legend--expanded">
+          <span><i class="legend-dot legend-dot--required"></i> Planned workout day</span>
+          <span><i class="legend-dot legend-dot--optional"></i> Standard training focus</span>
+          <span><i class="legend-dot legend-dot--endurance"></i> Endurance emphasis</span>
+          <span><i class="legend-dot legend-dot--peak"></i> Optional race shown</span>
+        </div>
+
+        <div class="month-grid-shell" id="may-month-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section">
+        <div class="split-layout split-layout--equal">
+          <article class="content-panel">
+            <h3>Levels</h3>
+            <ul class="calendar-support-list">
+              <li><strong>Beginner:</strong> shorten Tuesday and Thursday, keep Saturday near 1 hour, and keep Wednesday and Friday relaxed.</li>
+              <li><strong>Intermediate:</strong> follow the week as written and keep Saturday in the middle of the endurance range.</li>
+              <li><strong>Advanced:</strong> keep the same pattern, but extend Saturday toward 2 hours and add a bit more work inside the hard sessions if recovery stays good.</li>
+            </ul>
+          </article>
+
+          <article class="content-panel content-panel--accent">
+            <h3>If Plans Change</h3>
+            <ul class="calendar-support-list">
+              <li><strong>Missed XC simulation race:</strong> keep Sunday as rest and use the race only if it was the intended hard effort for the week.</li>
+              <li><strong>Weekend race selected:</strong> let the race replace the week’s Thursday-style hard session and keep Saturday aerobic.</li>
+              <li><strong>No event selected:</strong> keep the normal Saturday endurance and Sunday rest pattern.</li>
+              <li><strong>Heavy fatigue week:</strong> shorten the hard sessions before you cut the whole weekly rhythm apart.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/today-nav.js"></script>
+    <script type="module" src="/may-calendar.js"></script>
+  </body>
+</html>

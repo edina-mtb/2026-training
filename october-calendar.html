@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="October 2026 training calendar for the Edina mountain bike team, focused on tapering and peaking for State Championship."
+    />
+    <title>October Training Calendar | Edina Mountain Bike Team</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/index.html#top" class="brand">
+          <span class="brand__eyebrow">2026 Season Plan</span>
+          <span class="brand__name">Edina Mountain Bike Team</span>
+        </a>
+
+        <nav class="top-nav" aria-label="Primary">
+          <a href="/may-calendar.html#current-day" data-today-link>Today</a>
+          <a href="/index.html#overview">Overview</a>
+          <a href="/may-calendar.html">May</a>
+          <a href="/june-calendar.html">June</a>
+          <a href="/july-calendar.html">July</a>
+          <a href="/august-calendar.html">August</a>
+          <a href="/september-calendar.html">September</a>
+          <a href="/october-calendar.html" class="is-current">October</a>
+        </nav>
+
+        <a class="header-cta" href="https://www.strava.com" target="_blank" rel="noreferrer">Join Strava</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section june-hero">
+        <div class="june-hero__content">
+          <span class="section-label">October 2026</span>
+          <h1>Fresh, sharp, ready.</h1>
+          <p>
+            October is the peak month. The whole structure bends toward State Championship, then opens back up into recovery afterward.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#october-calendar-grid">Jump to the Calendar</a>
+            <a class="button button--secondary" href="/index.html#overview">Back to Overview</a>
+          </div>
+        </div>
+
+        <aside class="june-hero__panel">
+          <p class="hero__panel-label">A Few Rules</p>
+          <ul class="rules-list">
+            <li>Peak through freshness, not extra work.</li>
+            <li>Short sharpening beats extra volume.</li>
+            <li>Saturday is for openers. Sunday is race day.</li>
+            <li>After State, recovery takes priority over replacement work.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="section-label">At a Glance</span>
+          <h2>Shape of the month.</h2>
+          <p>
+            October reduces non-essential fatigue, holds onto rhythm, and aims everything toward a confident State Championship weekend.
+          </p>
+        </div>
+
+        <div class="june-summary-grid">
+          <article class="summary-card">
+            <span class="summary-card__label">Phase</span>
+            <strong>Peak</strong>
+            <p>The month is organized entirely around State.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Weekday Pattern</span>
+            <strong>Short Sharpening</strong>
+            <p>Enough quality to stay connected, not enough to accumulate fatigue.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Main Weekend</span>
+            <strong>State</strong>
+            <p>Saturday openers, Sunday race, then recovery and transition.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">After State</span>
+            <strong>Reset</strong>
+            <p>Easy riding, recovery, and a healthy close to the season.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="october-calendar-grid" class="section">
+        <div class="section-heading">
+          <span class="section-label">Day by Day</span>
+          <h2>Training Calendar</h2>
+          <p>Keep the taper calm, then let State weekend be the full focus.</p>
+        </div>
+
+        <div class="calendar-legend calendar-legend--expanded">
+          <span><i class="legend-dot legend-dot--required"></i> Planned workout day</span>
+          <span><i class="legend-dot legend-dot--optional"></i> Standard training focus</span>
+          <span><i class="legend-dot legend-dot--endurance"></i> Endurance emphasis</span>
+          <span><i class="legend-dot legend-dot--peak"></i> State race shown</span>
+        </div>
+
+        <div class="month-grid-shell" id="october-month-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/today-nav.js"></script>
+    <script type="module" src="/october-calendar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="June 2026 training calendar for the MCA mountain bike team, including race-day alternate efforts."
+    />
+    <title>June Training Calendar | MCA Mountain Bike</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/index.html#top" class="brand">
+          <span class="brand__eyebrow">2026 Season Plan</span>
+          <span class="brand__name">Edina Mountain Bike Team</span>
+        </a>
+
+        <nav class="top-nav" aria-label="Primary">
+          <a href="/index.html#overview">Overview</a>
+          <a href="/may-calendar.html#current-day" data-today-link>Today</a>
+          <a href="/may-calendar.html">May</a>
+          <a href="/june-calendar.html" class="is-current">June</a>
+          <a href="/july-calendar.html">July</a>
+          <a href="/august-calendar.html">August</a>
+          <a href="/september-calendar.html">September</a>
+          <a href="/october-calendar.html">October</a>
+        </nav>
+
+        <a class="header-cta" href="https://www.strava.com" target="_blank" rel="noreferrer">Join Strava</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section june-hero">
+        <div class="june-hero__content">
+          <span class="section-label">June 2026</span>
+          <h1>Base, build, and race selectively.</h1>
+          <p>
+            This calendar turns the June plan into a month grid. Each race day shows the event and the replacement
+            training effort so riders can stay aligned even when they do not attend.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#june-calendar-grid">Jump to the Calendar</a>
+            <a class="button button--secondary" href="/index.html#calendar">Back to Season Hub</a>
+          </div>
+        </div>
+
+        <aside class="june-hero__panel">
+          <p class="hero__panel-label">Guidelines</p>
+          <ul class="rules-list">
+            <li>Racing can replace hard effort days</li>
+            <li>Do not stack three primary hard efforts in the same week.</li>
+            <li>Fuel 60-120mins: Aim for 30-60g carbs per hour </li>
+            <li>Fuel >120mins: Aim for 60-90g carbs/hour </li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="section-label">At a Glance</span>
+          <h2>Shape of the month.</h2>
+          <p>
+            Riders should keep aerobic volume high, use races as substitutions rather than additions, and protect recovery between hard efforts.
+          </p>
+        </div>
+
+        <div class="june-summary-grid">
+          <article class="summary-card">
+            <span class="summary-card__label">Phase</span>
+            <strong>Base</strong>
+            <p>Continue building durability and rhythm.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Overlay</span>
+            <strong>Build</strong>
+            <p>Add race exposure without losing the aerobic foundation.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Weekly Pattern</span>
+            <strong>2 Hard Efforts</strong>
+            <p>Interval days, short-course race, or XC simulation. Not all three.</p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-card__label">Weekend Default</span>
+            <strong>Endurance</strong>
+            <p>If no event is selected, the weekend stays aerobic.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="june-calendar-grid" class="section">
+        <div class="section-heading">
+          <span class="section-label">Day by Day</span>
+          <h2>Training Calendar</h2>
+          <p>
+            Weekly plans with optional events.
+          </p>
+        </div>
+
+        <div class="calendar-legend calendar-legend--expanded">
+          <span><i class="legend-dot legend-dot--required"></i> Planned workout day</span>
+          <span><i class="legend-dot legend-dot--optional"></i> Standard training focus</span>
+          <span><i class="legend-dot legend-dot--endurance"></i> Endurance emphasis</span>
+          <span><i class="legend-dot legend-dot--peak"></i> Optional race shown</span>
+        </div>
+
+        <div class="month-grid-shell" id="june-month-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section">
+        <div class="split-layout split-layout--equal">
+          <article class="content-panel">
+            <h3>Levels</h3>
+            <ul class="calendar-support-list">
+              <li><strong>Beginner:</strong> 3 to 4 rides per week, shorter endurance options, selective race use.</li>
+              <li><strong>Intermediate:</strong> 4 to 5 rides per week, standard substitution rules.</li>
+              <li><strong>Advanced:</strong> 5 to 6 rides per week, longest endurance sessions, extra easy volume only if fresh.</li>
+            </ul>
+          </article>
+
+          <article class="content-panel content-panel--accent">
+            <h3>If Plans Change</h3>
+            <ul class="calendar-support-list">
+              <li><strong>Missed XC simulation race:</strong> replace with intervals only if it was the intended hard effort.</li>
+              <li><strong>Missed endurance event:</strong> complete the planned long endurance ride instead.</li>
+              <li><strong>No event selected:</strong> keep the weekend aerobic with endurance focus.</li>
+              <li><strong>Two options in one week:</strong> choose one focus instead of stacking load.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/today-nav.js"></script>
+    <script type="module" src="/june-calendar.js"></script>
+  </body>
+</html>

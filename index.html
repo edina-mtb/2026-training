@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Single-page 2026 season hub for the MCA mountain bike team with training guidance and race calendar."
+    />
+    <title>MCA Mountain Bike | 2026 Season Hub</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="#top" class="brand">
+          <span class="brand__eyebrow">2026 Season Hub</span>
+          <span class="brand__name">Edina Mountain Bike Team</span>
+        </a>
+
+        <nav class="top-nav" aria-label="Primary">
+          <a href="#home" class="is-current">Overview</a>
+          <a href="/may-calendar.html#current-day" data-today-link>Today</a>
+          <a href="/may-calendar.html">May</a>
+          <a href="/june-calendar.html">June</a>
+          <a href="/july-calendar.html">July</a>
+          <a href="/august-calendar.html">August</a>
+          <a href="/september-calendar.html">September</a>
+          <a href="/october-calendar.html">October</a>
+        </nav>
+
+        <a class="header-cta" href="https://www.strava.com" target="_blank" rel="noreferrer">Join Strava</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section id="home" class="hero section">
+        <div class="hero__content">
+          <span class="section-label">HOME</span>
+          <h1>The Plan.</h1>
+          <p>
+            Overarching 2026 training blocks for a successful MCA season and beyond.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="/may-calendar.html">Current Plan</a>
+            <a class="button button--secondary" href="#calendar">Season Calendar</a>
+          </div>
+
+          <div class="hero__stats">
+            <article class="stat-card">
+              <span class="stat-card__label">Practice Start</span>
+              <strong>Jul 7</strong>
+              <p>Official summer team block begins.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-card__label">Peak Event</span>
+              <strong>Oct 11-12</strong>
+              <p>State Championship weekend in Chisholm.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-card__label">Current Phase</span>
+              <strong>May Base</strong>
+              <p>Aerobic foundation and consistency.</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero__panel">
+          <div class="panel-glow"></div>
+          <p class="hero__panel-label">Season Arc</p>
+          <div class="season-track">
+            <div class="season-track__item is-active">
+              <span>May-Jul</span>
+              <strong>Base</strong>
+            </div>
+            <div class="season-track__item">
+              <span>Jun-Jul</span>
+              <strong>Build</strong>
+            </div>
+            <div class="season-track__item">
+              <span>Aug</span>
+              <strong>Sharpen</strong>
+            </div>
+            <div class="season-track__item">
+              <span>Aug-Oct</span>
+              <strong>Peak</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+       <section id="principles" class="section">
+        <div class="section-heading">
+          <span class="section-label">Coaching Priorities</span>
+          <h2>Themes</h2>
+          <p>These principles are what keep the training useful across different ability levels.</p>
+        </div>
+
+        <div class="principles-grid">
+          <article class="principle-card">
+            <h3>80-90% easy riding</h3>
+            <p>Most of the work should feel sustainable enough to repeat week after week.</p>
+          </article>
+          <article class="principle-card">
+            <h3>Races replace intensity</h3>
+            <p>Use events as hard efforts rather than adding more hard work around them.</p>
+          </article>
+          <article class="principle-card">
+            <h3>Consistency beats spikes</h3>
+            <p>Regular training matters more than the occasional huge ride or big week.</p>
+          </article>
+          <article class="principle-card">
+            <h3>Recovery is training</h3>
+            <p>Rest and easy days are part of the plan, not time lost from it.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="calendar" class="section">
+        <div class="section-heading">
+          <span class="section-label">Season Calendar</span>
+          <h2>Month to month.</h2>
+          <p>
+            A high level view of the calendar structure.
+          </p>
+        </div>
+
+        <div class="calendar-shell" id="calendar-grid" aria-live="polite"></div>
+
+        <div class="calendar-legend">
+          <span><i class="legend-dot legend-dot--required"></i> Required A-race</span>
+          <span><i class="legend-dot legend-dot--optional"></i> Optional B/C or series event</span>
+          <span><i class="legend-dot legend-dot--endurance"></i> Endurance event</span>
+          <span><i class="legend-dot legend-dot--peak"></i> State peak target</span>
+        </div>
+      </section>
+
+    </main>
+
+    <script type="module" src="/today-nav.js"></script>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
