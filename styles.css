@@ -614,7 +614,7 @@ body {
   letter-spacing: 0.08em;
 }
 
-.calendar-event__tag--required {
+.calendar-event__tag--mca {
   background: rgba(83, 211, 154, 0.14);
   color: #215339;
 }
@@ -672,7 +672,7 @@ body {
   display: inline-block;
 }
 
-.legend-dot--required {
+.legend-dot--mca {
   background: var(--green-bright);
 }
 
