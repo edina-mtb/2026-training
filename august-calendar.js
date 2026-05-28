@@ -49,22 +49,24 @@ const augustTrainingDays = [
   },
   {
     day: 7,
-    focus: 'Recovery day',
-    detail: 'Easy spin or full rest before the weekend.',
-    tone: 'recovery',
+    focus: 'Cuyuna',
+    detail: 'Team event in Cuyuna.',
+    tone: 'team',
+    tag: 'Mandatory Fun',
   },
   {
     day: 8,
-    focus: 'Endurance ride',
-    detail: 'Keep the ride aerobic enough that it does not blunt the sharpening process.',
-    tone: 'endurance',
-    tag: 'Planned long ride',
+    focus: 'Cuyuna',
+    detail: 'Team event in Cuyuna.',
+    tone: 'team',
+    tag: 'Mandatory Fun',
   },
   {
     day: 9,
-    focus: 'Total rest',
-    detail: 'Recover fully and keep the month feeling crisp rather than heavy.',
-    tone: 'recovery',
+    focus: 'Cuyuna',
+    detail: 'Team event in Cuyuna.',
+    tone: 'team',
+    tag: 'Mandatory Fun',
   },
   {
     day: 10,
@@ -231,6 +233,7 @@ const toneLabel = {
   hard: 'Hard',
   skills: 'Skills',
   endurance: 'Endurance',
+  team: 'Team',
   race: 'Race',
 };
 

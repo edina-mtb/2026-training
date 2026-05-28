@@ -629,6 +629,11 @@ body {
   color: var(--gold-soft);
 }
 
+.calendar-event__tag--team {
+  background: rgba(50, 92, 168, 0.14);
+  color: #325ca8;
+}
+
 .calendar-event__tag--peak {
   background: rgba(255, 255, 255, 0.12);
   color: var(--text-main);
@@ -677,6 +682,10 @@ body {
 
 .legend-dot--endurance {
   background: #f8b84e;
+}
+
+.legend-dot--team {
+  background: #325ca8;
 }
 
 .legend-dot--peak {
@@ -944,6 +953,11 @@ body {
   color: #fffaf1;
 }
 
+.calendar-day__tone--team {
+  background: #325ca8;
+  color: #f7fbff;
+}
+
 .calendar-day__tone--recovery {
   background: #8b968f;
   color: #ffffff;
@@ -1010,6 +1024,12 @@ body {
   color: #9a6821;
 }
 
+.calendar-day__tag--team {
+  border-color: rgba(50, 92, 168, 0.2);
+  background: rgba(50, 92, 168, 0.1);
+  color: #325ca8;
+}
+
 .calendar-day__tag--recovery {
   border-color: rgba(139, 150, 143, 0.24);
   background: rgba(139, 150, 143, 0.12);
@@ -1058,6 +1078,10 @@ body {
 
 .calendar-day--endurance {
   background: linear-gradient(180deg, rgba(255, 213, 139, 0.12), rgba(255, 255, 255, 0.95));
+}
+
+.calendar-day--team {
+  background: linear-gradient(180deg, rgba(120, 162, 236, 0.18), rgba(255, 255, 255, 0.96));
 }
 
 .calendar-day--event {

@@ -224,6 +224,7 @@ const toneLabel = {
   hard: 'Hard',
   skills: 'Skills',
   endurance: 'Endurance',
+  team: 'Team',
 };
 
 function renderFocus(entry) {

@@ -83,9 +83,10 @@ const juneTrainingDays = [
   },
   {
     day: 13,
-    focus: 'Aerobic opener',
-    detail: 'Brief endurance ride or pre-race spin. Keep the legs fresh.',
-    tone: 'endurance',
+    focus: 'Endurance',
+    detail: 'Redwing/Welch team endurance ride or pre-race spin if doing Detroit Lakes XC.',
+    tone: 'team',
+    tag: 'endurance',
   },
   {
     day: 14,
@@ -210,6 +211,7 @@ const toneLabel = {
   hard: 'Hard',
   skills: 'Skills',
   endurance: 'Endurance',
+  team: 'Team',
 };
 
 function buildLeadingEmptyDays(year, monthIndex) {

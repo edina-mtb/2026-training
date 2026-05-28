@@ -20,7 +20,7 @@ const octoberTrainingDays = [
 
 const weekdayLabels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 const currentDate = getCurrentDateParts();
-const toneLabel = { recovery: 'Recovery', strength: 'Strength', hard: 'Hard', skills: 'Skills', endurance: 'Endurance', race: 'Race' };
+const toneLabel = { recovery: 'Recovery', strength: 'Strength', hard: 'Hard', skills: 'Skills', endurance: 'Endurance', team: 'Team', race: 'Race' };
 
 function renderFocus(entry) {
   if (entry.tone === 'strength') {

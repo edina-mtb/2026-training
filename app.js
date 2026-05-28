@@ -8,8 +8,8 @@ const calendarMonths = [
     events: [
       {
         date: 'May 1',
-        title: '500 Mile Club Opens',
-        details: 'Start tracking season mileage and consistency.',
+        title: '500 Mile Club',
+        details: 'Start tracking season mileage. <br/> Join the <a href="https://www.strava.com/clubs/2098370" target="_blank" rel="noreferrer">Strava Team</a>',
         type: 'optional',
       },
       {
@@ -38,9 +38,15 @@ const calendarMonths = [
         type: 'endurance',
       },
       {
-        date: 'Jun 10',
-        title: 'Wirth on Wednesday',
-        details: 'Short-course intensity and race repetition.',
+        date: 'Jun 13',
+        title: 'Welch/Redwing Endurance Ride',
+        details: 'Optional endurance event for high school riders.',
+        type: 'team',
+      },
+      {
+        date: 'Weekdays',
+        title: 'WOW & Buck Races',
+        details: 'Wirth on Wednesdays and Buck Thursdays kick off',
         type: 'optional',
       },
       {
@@ -60,24 +66,24 @@ const calendarMonths = [
         date: 'Jul 7',
         title: 'Official Practice Start',
         details: 'Team training officially begins.',
-        type: 'required',
+        type: 'team',
       },
       {
         date: 'July 8',
         title: 'Wirth on Wednesday',
         details: 'Event sponsored by Edina MTB!',
+        type: 'team',
+      },
+      {
+        date: 'Weekdays',
+        title: 'WOW & Buck Races',
+        details: 'Wirth on Wednesdays and Buck Thursdays continue',
         type: 'optional',
       },
       {
         date: 'Jul 12',
         title: 'St. Croix Falls XC',
         details: 'Optional XC simulation race.',
-        type: 'optional',
-      },
-      {
-        date: 'Jul 22',
-        title: 'Wirth on Wednesday',
-        details: 'Short-course race for intensity and skills.',
         type: 'optional',
       },
     ],
@@ -87,6 +93,12 @@ const calendarMonths = [
     range: 'Sharpen',
     href: './august-calendar.html',
     events: [
+      {
+        date: 'Aug 7-9',
+        title: 'Cuyuuna',
+        details: 'Edina Team camping event hosted in Cuyuna.',
+        type: 'team',
+      },
       {
         date: 'Aug 16',
         title: 'Grand Rapids XC',
@@ -151,6 +163,7 @@ const tagLabel = {
   required: 'Required',
   optional: 'Optional',
   endurance: 'Endurance',
+  team: 'Team',
   peak: 'Peak',
 };
 
