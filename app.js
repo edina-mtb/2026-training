@@ -4,6 +4,7 @@ const calendarMonths = [
   {
     month: 'May',
     range: 'Base Start',
+    href: './may-calendar.html',
     events: [
       {
         date: 'May 1',
@@ -28,6 +29,7 @@ const calendarMonths = [
   {
     month: 'June',
     range: 'Build Begins',
+    href: './june-calendar.html',
     events: [
       {
         date: 'Jun 6',
@@ -52,12 +54,19 @@ const calendarMonths = [
   {
     month: 'July',
     range: 'Team Phase',
+    href: './july-calendar.html',
     events: [
       {
         date: 'Jul 7',
         title: 'Official Practice Start',
         details: 'Team training officially begins.',
         type: 'required',
+      },
+      {
+        date: 'July 8',
+        title: 'Wirth on Wednesday',
+        details: 'Event sponsored by Edina MTB!',
+        type: 'optional',
       },
       {
         date: 'Jul 12',
@@ -76,6 +85,7 @@ const calendarMonths = [
   {
     month: 'August',
     range: 'Sharpen',
+    href: './august-calendar.html',
     events: [
       {
         date: 'Aug 16',
@@ -86,13 +96,13 @@ const calendarMonths = [
       {
         date: 'Aug 22-23',
         title: 'Race 1 • Austin',
-        details: "Schindler's Way marks the first required weekend.",
+        details: "Schindler's Way kicks off the season.",
         type: 'required',
       },
       {
         date: 'Aug 29-30',
         title: 'Race 2 • Shakopee',
-        details: 'Second required MCA race weekend.',
+        details: 'Second MCA race and a course we know and love?',
         type: 'required',
       },
     ],
@@ -100,6 +110,7 @@ const calendarMonths = [
   {
     month: 'September',
     range: 'Race Rhythm',
+    href: './september-calendar.html',
     events: [
       {
         date: 'Sep 6',
@@ -110,13 +121,13 @@ const calendarMonths = [
       {
         date: 'Sep 12-13',
         title: 'Race 3 • Rockford',
-        details: 'Required MCA race at Lake Rebecca.',
+        details: 'Third MCA race at Lake Rebecca.',
         type: 'required',
       },
       {
         date: 'Sep 26-27',
         title: 'Race 4 • Minneapolis',
-        details: 'Required weekend at Theodore Wirth Park.',
+        details: 'Fourth MCA race at Theodore Wirth Park.',
         type: 'required',
       },
     ],
@@ -124,6 +135,7 @@ const calendarMonths = [
   {
     month: 'October',
     range: 'Peak',
+    href: './october-calendar.html',
     events: [
       {
         date: 'Oct 11-12',
@@ -145,8 +157,6 @@ const tagLabel = {
 function getCurrentSeasonPhase() {
   const { year, monthIndex } = getCurrentDateParts();
 
-  console.log(`Current date: ${year}-${monthIndex + 1}`);
-  
   if (year < SEASON_YEAR || (year === SEASON_YEAR && monthIndex <= 5)) {
     return 'base';
   }
@@ -183,7 +193,7 @@ if (calendarRoot) {
 
     monthCard.innerHTML = `
       <div class="calendar-month__header">
-        <h3>${month.month}</h3>
+        <h3><a class="calendar-month__link" href="${month.href}">${month.month}</a></h3>
         <span class="calendar-month__range">${month.range}</span>
       </div>
       <div class="calendar-events">
