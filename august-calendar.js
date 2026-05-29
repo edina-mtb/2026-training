@@ -90,10 +90,10 @@ const augustTrainingDays = [
   },
   {
     day: 13,
-    focus: 'Team practice or controlled hard day',
-    detail: 'If using a midweek event, let it replace the hard work and keep the rest of the week honest.',
-    race: 'Buck Hill Thursday Night Race Series. Use it only if it replaces the weekday hard session.',
-    tone: 'hard',
+    focus: 'Team practice or Buck Hill Race',
+    detail: 'A great opportunity to get a race in ahead of the first MCA in Austin.',
+    race: 'Buck Hill Thursday Night Race Series.',
+    tone: 'team',
     tag: 'Practice day',
   },
   {

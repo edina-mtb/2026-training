@@ -65,8 +65,8 @@ body {
 
 .brand {
   display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .brand__eyebrow,
@@ -84,6 +84,12 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-main);
+}
+
+.brand__logo {
+  display: block;
+  width: auto;
+  height: 3.1rem;
 }
 
 .top-nav {
@@ -1199,6 +1205,10 @@ body {
 
   .brand__name {
     font-size: 1.25rem;
+  }
+
+  .brand__logo {
+    height: 2.4rem;
   }
 
   .nav-toggle {

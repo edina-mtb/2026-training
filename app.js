@@ -106,6 +106,12 @@ const calendarMonths = [
         type: 'team',
       },
       {
+        date: 'Aug 13',
+        title: 'Buck Hill',
+        details: 'A great opportunity to get a race in ahead of the first MCA in Austin.',
+        type: 'optional',
+      },
+      {
         date: 'Aug 16',
         title: 'Grand Rapids XC',
         details: 'Optional final prep race before A-races start.',
@@ -120,7 +126,7 @@ const calendarMonths = [
       {
         date: 'Aug 29-30',
         title: 'Race 2 • Shakopee',
-        details: 'Second MCA race and a course we know and love?',
+        details: 'Second MCA race and a course we should all know and love?',
         type: 'mca',
       },
     ],
