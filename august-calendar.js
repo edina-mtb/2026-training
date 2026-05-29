@@ -1,7 +1,7 @@
 import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from './calendar-utils.js';
 
 const STRENGTH_GUIDE_URL = './strength-guide.html';
-const SKILLS_GUIDE_URL = 'https://www.edinacyclingteam.com/riding-skills--technique.html';
+const SKILLS_GUIDE_URL = './skills-guide.html';
 
 const augustTrainingDays = [
   {
@@ -248,7 +248,7 @@ function renderFocus(entry) {
   if (entry.tone === 'skills') {
     return entry.focus.replace(
       /skills?/i,
-      `<a class="calendar-day__focus-link" href="${SKILLS_GUIDE_URL}" target="_blank" rel="noreferrer">Skills</a>`
+      `<a class="calendar-day__focus-link" href="${SKILLS_GUIDE_URL}">Skills</a>`
     );
   }
 
