@@ -1,6 +1,6 @@
 import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from './calendar-utils.js';
 
-const STRENGTH_GUIDE_URL = 'https://www.edinacyclingteam.com/strength-training-guide-mtb-focus.html';
+const STRENGTH_GUIDE_URL = './strength-guide.html';
 const SKILLS_GUIDE_URL = 'https://www.edinacyclingteam.com/riding-skills--technique.html';
 
 const octoberTrainingDays = [
@@ -8,7 +8,7 @@ const octoberTrainingDays = [
   { day: 2, focus: 'Recovery day', detail: 'Keep the load low and remove anything non-essential.', tone: 'recovery' },
   { day: 3, focus: 'Endurance ride', detail: 'Moderate endurance only. Finish feeling better than you started.', tone: 'endurance', tag: 'Planned long ride' },
   { day: 4, focus: 'Total rest', detail: 'Reset before State week.', tone: 'recovery' },
-  { day: 5, focus: 'Strength maintenance', detail: 'Mobility and activation only. No heavy fatigue.', tone: 'strength' },
+  { day: 5, focus: 'Strength maintenance', detail: 'Mobility and activation only. No heavy fatigue. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.', tone: 'strength' },
   { day: 6, focus: 'Short sharpening', detail: 'A few short race-pace efforts are enough.', tone: 'hard', tag: 'Sharpening' },
   { day: 7, focus: 'Easy ride + skills', detail: 'Short easy ride, smooth handling, and confidence-building skills.', tone: 'skills', tag: 'Skills day' },
   { day: 8, focus: 'Short sharpening', detail: 'One last crisp signal, then start backing off.', tone: 'hard', tag: 'Sharpening' },

@@ -1,6 +1,6 @@
 import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from './calendar-utils.js';
 
-const STRENGTH_GUIDE_URL = 'https://www.edinacyclingteam.com/strength-training-guide-mtb-focus.html';
+const STRENGTH_GUIDE_URL = './strength-guide.html';
 const SKILLS_GUIDE_URL = 'https://www.edinacyclingteam.com/riding-skills--technique.html';
 
 const mayTrainingDays = [
@@ -26,7 +26,7 @@ const mayTrainingDays = [
   {
     day: 4,
     focus: 'Off-bike strength',
-    detail: 'Bodyweight squats, planks, mobility, and stretching. No riding.',
+    detail: 'Bodyweight squats, planks, mobility, and stretching. No riding. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -71,7 +71,7 @@ const mayTrainingDays = [
   {
     day: 11,
     focus: 'Off-bike strength',
-    detail: 'Bodyweight strength, planks, and stretching. No riding.',
+    detail: 'Bodyweight strength, planks, and stretching. No riding. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -118,7 +118,7 @@ const mayTrainingDays = [
   {
     day: 18,
     focus: 'Off-bike strength',
-    detail: 'Return to mobility, core, and bodyweight work if fatigue is under control.',
+    detail: 'Return to mobility, core, and bodyweight work if fatigue is under control. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -163,7 +163,7 @@ const mayTrainingDays = [
   {
     day: 25,
     focus: 'Off-bike strength',
-    detail: 'Bodyweight squats, planks, stretching, and mobility. No riding.',
+    detail: 'Bodyweight squats, planks, stretching, and mobility. No riding. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
     tone: 'strength',
   },
   {

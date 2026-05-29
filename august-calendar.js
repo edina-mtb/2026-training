@@ -1,6 +1,6 @@
 import { getCurrentDateParts, scrollToCurrentDayIfNeeded } from './calendar-utils.js';
 
-const STRENGTH_GUIDE_URL = 'https://www.edinacyclingteam.com/strength-training-guide-mtb-focus.html';
+const STRENGTH_GUIDE_URL = './strength-guide.html';
 const SKILLS_GUIDE_URL = 'https://www.edinacyclingteam.com/riding-skills--technique.html';
 
 const augustTrainingDays = [
@@ -21,7 +21,7 @@ const augustTrainingDays = [
   {
     day: 3,
     focus: 'Recovery + strength',
-    detail: 'Flush the legs and keep any strength work minimal and maintenance-oriented.',
+    detail: 'Flush the legs and keep any strength work minimal and maintenance-oriented. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -71,7 +71,7 @@ const augustTrainingDays = [
   {
     day: 10,
     focus: 'Strength maintenance',
-    detail: 'Mobility, activation, and durability work only.',
+    detail: 'Mobility, activation, and durability work only. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -119,7 +119,7 @@ const augustTrainingDays = [
   {
     day: 17,
     focus: 'Recovery + strength',
-    detail: 'Start A-race week by reducing fatigue rather than adding to it.',
+    detail: 'Start A-race week by reducing fatigue rather than adding to it. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
     tone: 'strength',
   },
   {
