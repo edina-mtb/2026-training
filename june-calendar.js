@@ -49,7 +49,7 @@ const juneTrainingDays = [
   {
     day: 8,
     focus: 'Recovery + strength',
-    detail: 'Mobility, core, and easy spinning only if legs feel good. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Mobility, core, and easy spinning only if legs feel good. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'recovery',
   },
   {
@@ -98,7 +98,7 @@ const juneTrainingDays = [
   {
     day: 15,
     focus: 'Recovery + strength',
-    detail: 'Light strength and mobility. Keep fatigue low. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Light strength and mobility. Keep fatigue low. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'recovery',
   },
   {

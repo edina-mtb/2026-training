@@ -10,7 +10,7 @@ const septemberTrainingDays = [
   { day: 4, focus: 'Recovery day', detail: 'Easy spin or full rest before the weekend.', tone: 'recovery' },
   { day: 5, focus: 'Endurance ride', detail: 'Keep the weekend aerobic if Callaway is not being used.', tone: 'endurance', tag: 'Planned long ride' },
   { day: 6, focus: 'Endurance ride or race-simulation workout', detail: 'If not racing, default to endurance and avoid residual fatigue going into Race 3 week.', race: 'Callaway XC. Optional only if it fits very cleanly.', tone: 'hard', tag: 'XC choice' },
-  { day: 7, focus: 'Recovery + strength', detail: 'Start Race 3 week with less fatigue, not more. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.', tone: 'strength' },
+  { day: 7, focus: 'Recovery + strength', detail: 'Start Race 3 week with less fatigue, not more. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.', tone: 'strength' },
   { day: 8, focus: 'Team practice quality', detail: 'Keep intensity short and supportive of the weekend.', tone: 'hard', tag: 'Practice day' },
   { day: 9, focus: 'Easy ride + skills', detail: 'Easy ride with a few handling cues. No extra load.', tone: 'skills', tag: 'Skills day' },
   { day: 10, focus: 'Team practice or easy support day', detail: 'Trim extra fatigue and keep the week moving toward Rockford.', tone: 'hard', tag: 'Race week' },
@@ -24,7 +24,7 @@ const septemberTrainingDays = [
   { day: 18, focus: 'Recovery day', detail: 'Let the week settle before the weekend.', tone: 'recovery' },
   { day: 19, focus: 'Endurance ride', detail: 'Maintain aerobic support without making the day bigger than it needs to be.', tone: 'endurance', tag: 'Planned long ride' },
   { day: 20, focus: 'Total rest', detail: 'Stay patient between race weekends.', tone: 'recovery' },
-  { day: 21, focus: 'Recovery + strength', detail: 'Mobility and light durability work only. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.', tone: 'strength' },
+  { day: 21, focus: 'Recovery + strength', detail: 'Mobility and light durability work only. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.', tone: 'strength' },
   { day: 22, focus: 'Team practice quality', detail: 'Use one measured quality signal, then begin trimming fatigue.', tone: 'hard', tag: 'Practice day' },
   { day: 23, focus: 'Easy ride + skills', detail: 'Easy ride and skills only. No extra midweek load.', tone: 'skills', tag: 'Skills day' },
   { day: 24, focus: 'Team practice or easy support day', detail: 'Keep the load clearly below normal as the race weekend approaches.', tone: 'hard', tag: 'Race week' },
@@ -44,7 +44,7 @@ function renderFocus(entry) {
   if (entry.tone === 'strength') {
     return entry.focus.replace(
       /strength/i,
-      `<a class="calendar-day__focus-link" href="${STRENGTH_GUIDE_URL}" target="_blank" rel="noreferrer">Strength</a>`
+      `<a class="calendar-day__focus-link" href="${STRENGTH_GUIDE_URL}">Strength</a>`
     );
   }
 

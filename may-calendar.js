@@ -26,7 +26,7 @@ const mayTrainingDays = [
   {
     day: 4,
     focus: 'Off-bike strength',
-    detail: 'Bodyweight squats, planks, mobility, and stretching. No riding. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Bodyweight squats, planks, mobility, and stretching. No riding. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -71,7 +71,7 @@ const mayTrainingDays = [
   {
     day: 11,
     focus: 'Off-bike strength',
-    detail: 'Bodyweight strength, planks, and stretching. No riding. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Bodyweight strength, planks, and stretching. No riding. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -118,7 +118,7 @@ const mayTrainingDays = [
   {
     day: 18,
     focus: 'Off-bike strength',
-    detail: 'Return to mobility, core, and bodyweight work if fatigue is under control. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Return to mobility, core, and bodyweight work if fatigue is under control. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -163,7 +163,7 @@ const mayTrainingDays = [
   {
     day: 25,
     focus: 'Off-bike strength',
-    detail: 'Bodyweight squats, planks, stretching, and mobility. No riding. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Bodyweight squats, planks, stretching, and mobility. No riding. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -224,7 +224,7 @@ function renderFocus(entry) {
   if (entry.tone === 'strength') {
     return entry.focus.replace(
       /strength/i,
-      `<a class="calendar-day__focus-link" href="${STRENGTH_GUIDE_URL}" target="_blank" rel="noreferrer">Strength</a>`
+      `<a class="calendar-day__focus-link" href="${STRENGTH_GUIDE_URL}">Strength</a>`
     );
   }
 

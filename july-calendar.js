@@ -38,7 +38,7 @@ const julyTrainingDays = [
   {
     day: 6,
     focus: 'Strength maintenance',
-    detail: 'Mobility, core, and durability work. Keep it maintenance-oriented, not fatiguing. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Mobility, core, and durability work. Keep it maintenance-oriented, not fatiguing. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -87,7 +87,7 @@ const julyTrainingDays = [
   {
     day: 13,
     focus: 'Recovery + strength',
-    detail: 'Flush the legs and keep any strength work short and maintenance-focused. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Flush the legs and keep any strength work short and maintenance-focused. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -135,7 +135,7 @@ const julyTrainingDays = [
   {
     day: 20,
     focus: 'Recovery + strength',
-    detail: 'Keep Monday light so the next practice block starts with decent legs. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Keep Monday light so the next practice block starts with decent legs. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -183,7 +183,7 @@ const julyTrainingDays = [
   {
     day: 27,
     focus: 'Strength maintenance',
-    detail: 'Mobility, core, and durability. Keep the work light enough to support practice quality. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Mobility, core, and durability. Keep the work light enough to support practice quality. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -231,7 +231,7 @@ function renderFocus(entry) {
   if (entry.tone === 'strength') {
     return entry.focus.replace(
       /strength/i,
-      `<a class="calendar-day__focus-link" href="${STRENGTH_GUIDE_URL}" target="_blank" rel="noreferrer">Strength</a>`
+      `<a class="calendar-day__focus-link" href="${STRENGTH_GUIDE_URL}">Strength</a>`
     );
   }
 

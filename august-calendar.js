@@ -21,7 +21,7 @@ const augustTrainingDays = [
   {
     day: 3,
     focus: 'Recovery + strength',
-    detail: 'Flush the legs and keep any strength work minimal and maintenance-oriented. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Flush the legs and keep any strength work minimal and maintenance-oriented. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -71,7 +71,7 @@ const augustTrainingDays = [
   {
     day: 10,
     focus: 'Strength maintenance',
-    detail: 'Mobility, activation, and durability work only. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Mobility, activation, and durability work only. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -119,7 +119,7 @@ const augustTrainingDays = [
   {
     day: 17,
     focus: 'Recovery + strength',
-    detail: 'Start A-race week by reducing fatigue rather than adding to it. <a class="calendar-day__focus-link" href="./strength-guide.html" target="_blank" rel="noreferrer">Strength guide</a>.',
+    detail: 'Start A-race week by reducing fatigue rather than adding to it. <a class="calendar-day__focus-link" href="./strength-guide.html">Strength guide</a>.',
     tone: 'strength',
   },
   {
@@ -241,7 +241,7 @@ function renderFocus(entry) {
   if (entry.tone === 'strength') {
     return entry.focus.replace(
       /strength/i,
-      `<a class="calendar-day__focus-link" href="${STRENGTH_GUIDE_URL}" target="_blank" rel="noreferrer">Strength</a>`
+      `<a class="calendar-day__focus-link" href="${STRENGTH_GUIDE_URL}">Strength</a>`
     );
   }
 
