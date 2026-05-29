@@ -180,7 +180,7 @@ const juneTrainingDays = [
     day: 27,
     focus: 'Long endurance ride',
     detail: 'Complete the planned long steady endurance ride and let it drive the week.',
-    race: 'Lutsen 99er. Use it in place of the long ride if attending.',
+    race: 'Lutsen 99er. Optional endurance event with 29mi, 45mi, 59mi, and 99mi options. <a href="https://www.lutsen99er.com/info-2/" target="_blank" rel="noreferrer">More info here</a>.',
     tone: 'endurance',
     tag: 'Planned long ride',
   },

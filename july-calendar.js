@@ -147,11 +147,11 @@ const julyTrainingDays = [
   },
   {
     day: 22,
-    focus: 'Easy ride + skills',
-    detail: 'Keep the ride easy and stay focused on one skill cue rather than adding extra work. This is not a formal team practice day.',
-    race: 'Wirth on Wednesday. Use it only if it replaces the day’s easy ride and skills focus.',
-    tone: 'skills',
-    tag: 'Skills day',
+    focus: 'WoW - Womens Race Day',
+    detail: 'Race or just ride to Wirth.',
+    race: 'Come and race or support the Women and Non-Bnary races at wirth.',
+    tone: 'team',
+    tag: 'Skills/Casual day',
   },
   {
     day: 23,

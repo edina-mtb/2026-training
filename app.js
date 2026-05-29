@@ -34,7 +34,7 @@ const calendarMonths = [
       {
         date: 'Jun 6',
         title: 'Borah Epic Bike Fest',
-        details: 'Optional endurance event with long-distance options.',
+        details: 'Optional endurance event with 18mi and 40mi options. <a href="https://www.birkie.com/bike/events/epic-bike-fest/" target="_blank" rel="noreferrer">More info here</a>.',
         type: 'endurance',
       },
       {
@@ -45,14 +45,14 @@ const calendarMonths = [
       },
       {
         date: 'Weekdays',
-        title: 'WOW & Buck Races',
+        title: 'WoW & Buck Races',
         details: 'Wirth on Wednesdays and Buck Thursdays kick off',
         type: 'optional',
       },
       {
         date: 'Jun 27',
         title: 'Lutsen 99er',
-        details: 'Big endurance test and confidence day.',
+        details: 'Optional endurance event with 29mi, 45mi, 59mi, and 99mi options. <a href="https://www.lutsen99er.com/info-2/" target="_blank" rel="noreferrer">More info here</a>.',
         type: 'endurance',
       },
     ],
@@ -76,7 +76,7 @@ const calendarMonths = [
       },
       {
         date: 'Weekdays',
-        title: 'WOW & Buck Races',
+        title: 'WoW & Buck Races',
         details: 'Wirth on Wednesdays and Buck Thursdays continue',
         type: 'optional',
       },
@@ -85,6 +85,12 @@ const calendarMonths = [
         title: 'St. Croix Falls XC',
         details: 'Optional XC simulation race.',
         type: 'optional',
+      },
+      {
+        date: 'Jul 22',
+        title: 'Wirth on Wednesday',
+        details: 'Women & Non-Binary racen event -- come race or cheer.',
+        type: 'team',
       },
     ],
   },
