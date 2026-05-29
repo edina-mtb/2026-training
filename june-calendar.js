@@ -56,7 +56,7 @@ const juneTrainingDays = [
   {
     day: 9,
     focus: 'Interval day',
-    detail: 'Race-prep efforts or short hill repeats. Stop before form falls apart.',
+    detail: 'Race-prep efforts or short hill repeats. Stop before form falls apart. <br/><br/>  Limit these to openers if doing Wow or Buck.',
     tone: 'hard',
   },
   {
@@ -70,9 +70,9 @@ const juneTrainingDays = [
   {
     day: 11,
     focus: 'Aerobic support or interval replacement',
-    detail: 'If Wednesday was the hard event, keep this day easy. If this is the chosen quality day, use the standard interval session here.',
+    detail: 'If Wednesday was the hard event, keep this day easy with skills. <br/></br> If this is the chosen hard day, perform nterval session or race Buck.',
     race: 'Buck Hill Thursday Night Race Series. Choose one primary hard event this week, not both.',
-    tone: 'hard',
+    tone: 'skills',
     tag: 'Choice week',
   },
   {
@@ -90,8 +90,8 @@ const juneTrainingDays = [
   },
   {
     day: 14,
-    focus: 'Race-simulation workout or endurance',
-    detail: 'If this weekend is not a race weekend for the rider, default to endurance unless this was intended to be the hard race-simulation effort.',
+    focus: 'Endurance or Race',
+    detail: 'If this weekend is not a race weekend for the rider, default to endurance -- otherwise rip Detroit Lakes!',
     race: 'Detroit Lakes XC. If attending, it becomes the week’s hard race-simulation effort.',
     tone: 'hard',
     tag: 'XC choice',
@@ -165,7 +165,7 @@ const juneTrainingDays = [
   {
     day: 25,
     focus: 'Easy aerobic support or interval replacement',
-    detail: 'If Lutsen is the weekend focus, keep this day light. If this is the chosen hard event, skip extra quality elsewhere.',
+    detail: 'If Lutsen is the weekend focus, keep this day light w/ a few openers. <br/><br/>If this is the chosen hard event, follow interval plan or race Buck.',
     race: 'Buck Hill Thursday Night Race Series. Do not stack it aggressively with Lutsen.',
     tone: 'hard',
     tag: 'Choice week',
@@ -173,7 +173,7 @@ const juneTrainingDays = [
   {
     day: 26,
     focus: 'Recovery day',
-    detail: 'Rest, hydration, and prep for the weekend.',
+    detail: 'Rest, hydration, and prep for the weekend. <br/><br/>Dial your bike if racing Saturday',
     tone: 'recovery',
   },
   {
