@@ -104,14 +104,16 @@ const juneTrainingDays = [
   {
     day: 16,
     focus: 'Controlled interval day',
-    detail: '3 to 4 race-pace hill efforts with full recovery.',
+    detail: '3 to 4 race-pace hill efforts with full recovery. Limit effort to just openers if racing WOW.',
     tone: 'hard',
   },
   {
     day: 17,
-    focus: 'Easy ride + skills',
+    focus: 'Race or Easy ride + skills',
     detail: 'Cornering and trail flow under low fatigue.',
-    tone: 'skills',
+    race: 'Wirth on Wednesday. Use it instead of the interval day if attending.',
+    tone: 'hard',
+    tag: 'Optional Race',
   },
   {
     day: 18,
